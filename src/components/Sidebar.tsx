@@ -15,10 +15,10 @@ import logoJateng from '../assets/brand/logo.png';
 
 const navItemsTop = [
   { to: '/', label: 'Executive Dashboard', icon: LayoutDashboard, end: true },
-  { to: '/isu-wilayah', label: 'Isu Wilayah', icon: MapPinned },
 ];
 
 const navItemsRest = [
+  { to: '/isu-wilayah', label: 'Isu Wilayah', icon: MapPinned },
   { to: '/isu-komisi', label: 'Isu Komisi', icon: Landmark },
   { to: '/kinerja', label: 'Kinerja DPRD', icon: Gavel },
   { to: '/personal', label: 'Personal DPRD', icon: UserRound },
