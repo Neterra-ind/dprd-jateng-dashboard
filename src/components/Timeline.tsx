@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react';
 import type { IssueTimelineEntry } from '../data';
 
 const tipeStyle: Record<IssueTimelineEntry['tipe'], { color: string; label: string }> = {
@@ -32,6 +33,16 @@ export default function Timeline({ entries }: { entries: IssueTimelineEntry[] })
               </div>
               <p className="mt-1 text-[13px] font-semibold text-ink">{e.judul}</p>
               <p className="mt-0.5 text-[12.5px] text-ink-soft">{e.deskripsi}</p>
+              {e.sourceUrl && (
+                <a
+                  href={e.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 inline-flex items-center gap-1 text-[11.5px] font-medium text-brand hover:underline"
+                >
+                  Baca berita asli <ExternalLink size={11} />
+                </a>
+              )}
             </div>
           );
         })}

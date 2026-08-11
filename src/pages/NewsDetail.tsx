@@ -99,14 +99,20 @@ export default function NewsDetail() {
           </div>
         )}
 
-        <a
-          href={berita.sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-5 flex items-center gap-1.5 text-[12.5px] font-medium text-brand hover:underline"
-        >
-          Sumber berita <ExternalLink size={13} />
-        </a>
+        {berita.isReal ? (
+          <a
+            href={berita.sourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 flex items-center gap-1.5 text-[12.5px] font-medium text-brand hover:underline"
+          >
+            Sumber berita <ExternalLink size={13} />
+          </a>
+        ) : (
+          <p className="mt-5 text-[12px] text-ink-faint">
+            Berita ilustratif untuk keperluan demo — tidak tertaut ke artikel nyata.
+          </p>
+        )}
       </SectionCard>
     </div>
   );

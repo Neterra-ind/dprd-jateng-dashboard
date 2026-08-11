@@ -83,6 +83,8 @@ export interface IssueTimelineEntry {
   judul: string;
   deskripsi: string;
   tipe: 'kejadian' | 'pemberitaan' | 'respons_pemda' | 'respons_dprd' | 'eskalasi';
+  /** Present for entries sourced from real scraped news; links out to the original article. */
+  sourceUrl?: string;
 }
 
 export interface IsuWilayah {
