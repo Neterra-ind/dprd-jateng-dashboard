@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { DemoDataTag } from './Badges';
 
 export function KPICard({
@@ -116,11 +116,14 @@ export function ProgressBar({ value, colorVar = 'var(--color-brand)' }: { value:
 }
 
 export function Avatar({ name, size = 36, src }: { name: string; size?: number; src?: string }) {
-  if (src) {
+  const [failed, setFailed] = useState(false);
+
+  if (src && !failed) {
     return (
       <img
         src={src}
         alt={name}
+        onError={() => setFailed(true)}
         className="shrink-0 rounded-full object-cover object-top"
         style={{ width: size, height: size }}
       />

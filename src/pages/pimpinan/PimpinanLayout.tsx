@@ -2,6 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { Crown } from 'lucide-react';
 import GlobalFilterBar from '../../components/GlobalFilterBar';
 import { DemoDataTag } from '../../components/Badges';
+import { Avatar } from '../../components/ui';
 import { usePimpinanLeader } from '../../lib/usePimpinanLeader';
 import { fraksiById } from '../../data/fraksi';
 
@@ -40,24 +41,18 @@ export default function PimpinanLayout() {
           <DemoDataTag />
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex gap-2 overflow-x-auto scrollbar-thin">
           {leadershipList.map((l) => (
             <button
               key={l.id}
               onClick={() => setLeaderId(l.id)}
-              className={`flex items-center gap-2.5 rounded-md py-1.5 pl-1.5 pr-3 text-left text-[12.5px] font-medium transition-colors ${
+              className={`flex shrink-0 items-center gap-2.5 rounded-md py-1.5 pl-1.5 pr-3 text-left text-[12.5px] font-medium transition-colors ${
                 l.id === leaderId ? 'bg-accent text-navy-950' : 'bg-white/8 text-white/70 hover:bg-white/15'
               }`}
               style={l.id === leaderId ? { color: 'var(--color-navy-950)' } : undefined}
             >
-              {l.foto ? (
-                <img src={l.foto} alt={l.nama} className="h-9 w-9 shrink-0 rounded-full object-cover object-top" />
-              ) : (
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/15 text-[11px] font-semibold">
-                  {l.nama.slice(0, 2).toUpperCase()}
-                </span>
-              )}
-              <span>
+              <Avatar name={l.nama} src={l.foto} size={36} />
+              <span className="whitespace-nowrap">
                 <span className="block font-semibold">{l.jabatan}</span>
                 <span className="block text-[11px] opacity-80">{l.nama.split(',')[0]}</span>
               </span>
