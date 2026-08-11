@@ -109,6 +109,8 @@ export interface IsuWilayah {
   strategic: boolean;
   emerging: boolean;
   updatedAt: string;
+  /** True when volume/trend/sentiment/timeline are computed from the real scraped dataset rather than illustrative demo values. */
+  isDataReal?: boolean;
 }
 
 export interface Media {
@@ -125,7 +127,8 @@ export interface Berita {
   ringkasan: string;
   mediaId: string;
   tanggal: string;
-  isuId: string;
+  /** Undefined for real institutional news that doesn't map to a specific regional isu topic. */
+  isuId?: string;
   aktorUtama: string; // free text actor label
   anggotaIds: string[];
   komisiIds: string[];
@@ -134,6 +137,8 @@ export interface Berita {
   pernyataan?: string;
   sourceUrl: string;
   wilayahId?: string;
+  /** Present for real scraped news; distinguishes it from illustrative demo articles. */
+  isReal?: boolean;
 }
 
 export type SosmedPlatform = 'facebook' | 'instagram' | 'tiktok' | 'youtube' | 'twitter';

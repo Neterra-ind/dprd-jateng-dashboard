@@ -11,7 +11,7 @@ import { mediaById } from '../data/media';
 import { risikoByIsuId } from '../data/risiko';
 import { oversightGapByIsuId } from '../data/oversightGap';
 import { SectionCard, EmptyState, Avatar } from '../components/ui';
-import { SentimentBadge, StatusBadge, TrendTag, UrgencyBadge, RiskLevelBadge, DemoDataTag } from '../components/Badges';
+import { SentimentBadge, StatusBadge, TrendTag, UrgencyBadge, RiskLevelBadge, DemoDataTag, RealDataTag } from '../components/Badges';
 import Timeline from '../components/Timeline';
 import OPDProfileDrawer from '../components/OPDProfileDrawer';
 import { useState } from 'react';
@@ -41,7 +41,7 @@ export default function IsuDetail() {
           <p className="mb-1 text-[11.5px] font-medium text-ink-faint">Isu Wilayah · {isu.kategori}</p>
           <div className="flex items-center gap-2.5 flex-wrap">
             <h1 className="text-[21px] font-semibold tracking-tight text-ink">{isu.nama}</h1>
-            <DemoDataTag />
+            {isu.isDataReal ? <RealDataTag /> : <DemoDataTag />}
           </div>
           <p className="mt-1.5 max-w-2xl text-[13px] text-ink-soft">{isu.ringkasan}</p>
         </div>

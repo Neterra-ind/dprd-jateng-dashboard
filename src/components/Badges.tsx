@@ -75,6 +75,19 @@ export function DemoDataTag() {
   );
 }
 
+/**
+ * Marks content sourced from the real scraped news dataset (2026-08-04 to 2026-08-11),
+ * as opposed to illustrative demo content. Isu/anggota linkage is keyword-based classification,
+ * so it's labeled as such rather than presented as manually verified editorial tagging.
+ */
+export function RealDataTag() {
+  return (
+    <span className="inline-flex items-center rounded-full border border-[var(--color-accent)]/40 bg-[var(--color-accent)]/10 px-2.5 py-0.5 text-[10.5px] font-semibold tracking-wide text-[var(--color-accent)]">
+      DATA REAL &middot; KLASIFIKASI AI
+    </span>
+  );
+}
+
 export function TrendTag({ value, invert = false }: { value: number; invert?: boolean }) {
   const rising = value >= 0;
   const isGood = invert ? !rising : rising;

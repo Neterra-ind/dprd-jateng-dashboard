@@ -1,11 +1,19 @@
 import type { Berita, Sentiment } from './types';
 import { isuWilayahList } from './isuWilayah';
-import { mediaList } from './media';
+import { fictionalMediaList } from './media';
 import { wilayahById } from './wilayah';
 import { opdById } from './opd';
 import { komisiById } from './komisi';
 import { anggotaById } from './anggota';
 import { seededRng, daysAgo } from '../lib/random';
+import { realBeritaList } from './realNews';
+
+/**
+ * The real scraped dataset (see realNews.ts) covers 16 of the 18 isu categories. These two
+ * still use the illustrative synthetic generator below, clearly attributed only to the
+ * fictional media outlets in media.ts (never to a real outlet).
+ */
+const SYNTHETIC_ONLY_ISU_IDS = new Set(['isu-banjir-rob', 'isu-jalan-rusak-non-pantura']);
 
 const rng = seededRng(2026);
 const TODAY = '2026-08-10';
@@ -65,10 +73,10 @@ function slugify(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-export const beritaList: Berita[] = [];
+const syntheticBerita: Berita[] = [];
 
 let counter = 0;
-for (const isu of isuWilayahList) {
+for (const isu of isuWilayahList.filter((i) => SYNTHETIC_ONLY_ISU_IDS.has(i.id))) {
   const newsCount = Math.max(3, Math.min(9, Math.round(isu.volume / 140)));
   for (let i = 0; i < newsCount; i++) {
     counter++;
@@ -85,7 +93,7 @@ for (const isu of isuWilayahList) {
     const wilayah = wilayahById(rng.pick(isu.wilayahIds)) ?? wilayahById(isu.wilayahIds[0])!;
     const opd = opdById(rng.pick(isu.opdIds)) ?? opdById(isu.opdIds[0])!;
     const komisi = komisiById(rng.pick(isu.komisiIds)) ?? komisiById(isu.komisiIds[0])!;
-    const media = rng.pick(mediaList);
+    const media = rng.pick(fictionalMediaList);
 
     const anggotaId = isu.anggotaIds.length > 0 && rng.bool(0.55) ? rng.pick(isu.anggotaIds) : undefined;
     const anggota = anggotaId ? anggotaById(anggotaId) : undefined;
@@ -103,7 +111,7 @@ for (const isu of isuWilayahList) {
 
     const tanggal = daysAgo(TODAY, rng.int(0, 42));
 
-    beritaList.push({
+    syntheticBerita.push({
       id: `berita-${counter.toString().padStart(4, '0')}`,
       headline,
       ringkasan: `${isu.ringkasan} Perkembangan ini menjadi perhatian ${opd.singkatan} dan ${komisi.nama} DPRD Provinsi Jawa Tengah.`,
@@ -122,6 +130,8 @@ for (const isu of isuWilayahList) {
   }
 }
 
-beritaList.sort((a, b) => (a.tanggal < b.tanggal ? 1 : -1));
+export const beritaList: Berita[] = [...realBeritaList, ...syntheticBerita].sort((a, b) =>
+  a.tanggal < b.tanggal ? 1 : -1
+);
 
 export const beritaById = (id: string) => beritaList.find((b) => b.id === id);

@@ -13,6 +13,10 @@ dist-ssr
 *.local
 .claude/scheduled_tasks.lock
 
+# Raw scraped news sources (full copyrighted article text) — kept local only.
+# The dashboard embeds short excerpts + source links via src/data/realNews.json instead.
+Data news isu*.xlsx
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

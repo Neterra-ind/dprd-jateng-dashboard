@@ -8,7 +8,7 @@ import { mediaById } from '../data/media';
 import { isuById } from '../data/isuWilayah';
 import { filterBerita } from '../lib/filters';
 import { sentimentDistribution, topMediaByVolume, weeklyTrendSeries } from '../lib/aggregations';
-import { SentimentBadge } from '../components/Badges';
+import { SentimentBadge, RealDataTag, DemoDataTag } from '../components/Badges';
 import SentimentDonut from '../components/charts/SentimentDonut';
 import RankedBarList from '../components/RankedBarList';
 import TrendLineChart from '../components/charts/TrendLineChart';
@@ -73,7 +73,7 @@ export default function MediaMonitoring() {
           <EmptyState message="Tidak ada berita yang sesuai dengan filter." />
         ) : (
           <div className="overflow-x-auto -mx-4 lg:-mx-5">
-            <table className="w-full min-w-[1000px] text-[12.5px]">
+            <table className="w-full min-w-[1150px] text-[12.5px]">
               <thead>
                 <tr className="border-b border-border text-left text-[11px] uppercase tracking-wide text-ink-faint">
                   <th className="px-4 py-2 font-medium lg:px-5">Headline</th>
@@ -83,6 +83,7 @@ export default function MediaMonitoring() {
                   <th className="px-3 py-2 font-medium">Aktor</th>
                   <th className="px-3 py-2 font-medium">Sentimen</th>
                   <th className="px-3 py-2 font-medium">Tone</th>
+                  <th className="px-3 py-2 font-medium">Sumber</th>
                 </tr>
               </thead>
               <tbody>
@@ -101,6 +102,7 @@ export default function MediaMonitoring() {
                     <td className="px-3 py-2.5 text-ink-soft">{b.aktorUtama}</td>
                     <td className="px-3 py-2.5"><SentimentBadge sentiment={b.sentiment} /></td>
                     <td className="px-3 py-2.5 text-ink-soft">{b.tone}</td>
+                    <td className="px-3 py-2.5">{b.isReal ? <RealDataTag /> : <DemoDataTag />}</td>
                   </tr>
                 ))}
               </tbody>

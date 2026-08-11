@@ -6,7 +6,7 @@ import { isuById } from '../data/isuWilayah';
 import { komisiById } from '../data/komisi';
 import { anggotaById } from '../data/anggota';
 import { SectionCard, EmptyState, Avatar } from '../components/ui';
-import { SentimentBadge, DemoDataTag } from '../components/Badges';
+import { SentimentBadge, DemoDataTag, RealDataTag } from '../components/Badges';
 
 export default function NewsDetail() {
   const { id } = useParams();
@@ -31,7 +31,7 @@ export default function NewsDetail() {
           <span className="text-[11.5px] text-ink-faint">
             {new Date(berita.tanggal).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
           </span>
-          <DemoDataTag />
+          {berita.isReal ? <RealDataTag /> : <DemoDataTag />}
         </div>
 
         <h1 className="text-[19px] font-semibold leading-snug text-ink">{berita.headline}</h1>
@@ -62,9 +62,13 @@ export default function NewsDetail() {
           <div>
             <dt className="text-ink-faint">Isu</dt>
             <dd>
-              <button onClick={() => isu && navigate(`/isu-wilayah/${isu.id}`)} className="font-medium text-brand hover:underline">
-                {isu?.nama}
-              </button>
+              {isu ? (
+                <button onClick={() => navigate(`/isu-wilayah/${isu.id}`)} className="font-medium text-brand hover:underline">
+                  {isu.nama}
+                </button>
+              ) : (
+                <span className="text-ink-faint">Tidak terpetakan ke isu spesifik</span>
+              )}
             </dd>
           </div>
           <div>
