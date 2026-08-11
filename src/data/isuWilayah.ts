@@ -14,7 +14,6 @@ export const isuWilayahList: IsuWilayah[] = [
     komisiIds: ['komisi-d'], anggotaIds: ['anggota-04'],
     dampak: ['Masyarakat', 'Infrastruktur', 'Aktivitas ekonomi'],
     statusResponsPemda: 'ada', statusResponsDprd: 'belum',
-    catatanResponsPemda: 'Dinas PU mengirimkan alat berat darurat dan menjanjikan perbaikan bertahap.',
     timeline: [
       { tanggal: '2026-08-04', judul: 'Pelatihan Kebencanaan Perkuat Peran Perempuan di Kawasan Pesisir', deskripsi: 'Pelatihan kebencanaan diberikan kepada masyarakat di Desa Bunton, Kecamatan Adipala, Kabupaten Cilacap, Jawa Tengah. Itu dilakukan untuk...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-05', judul: 'Hadapi Ancaman Perubahan Iklim, Jateng Sinergikan 8 Daerah dan Mitra Global Amankan DAS', deskripsi: 'MEDIATAMA - Menghadapi dampak nyata perubahan iklim yang kian mengancam, pemerintah Provinsi Jawa Tengah merangkul delapan daerah serta...', tipe: 'pemberitaan' },
@@ -34,8 +33,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-pertanian', 'opd-perindustrian'], urusanId: 'urusan-pertanian',
     komisiIds: ['komisi-b'], anggotaIds: ['anggota-02', 'anggota-28'],
     dampak: ['Daya beli masyarakat', 'Stabilitas pasar'],
-    statusResponsPemda: 'ada', statusResponsDprd: 'sebagian',
-    catatanResponsDprd: 'Komisi B menggelar rapat dengar pendapat dengan Disperindag, belum ada rekomendasi resmi.',
+    statusResponsPemda: 'ada', statusResponsDprd: 'belum',
     timeline: [
       { tanggal: '2026-08-04', judul: 'TP PKK Ajak Warga Ubah Jelantah Jadi Rupiah Lewat Gerakan Sirkular', deskripsi: 'Tim Penggerak Pemberdayaan Kesejahteraan Keluarga (TP PKK) Kota Pekalongan kembali menggelar kegiatan edukasi bertajuk Komunikasi...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-06', judul: 'Bulog Distribusikan SPHP dan Beras Premium Sesuai HET, Pastikan Ketersediaan Pangan - SuaraBaru.id', deskripsi: 'SEMARANG (SUARABARU.ID) - Perum Bulog Kantor Wilayah Jawa Tengah terus memperkuat komitmennya dalam menjaga ketersediaan pangan dan...', tipe: 'pemberitaan' },
@@ -55,8 +53,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-kesehatan'], urusanId: 'urusan-kesehatan',
     komisiIds: ['komisi-e'], anggotaIds: ['anggota-05', 'anggota-94'],
     dampak: ['Tumbuh kembang anak', 'Kualitas SDM jangka panjang'],
-    statusResponsPemda: 'ada', statusResponsDprd: 'ada',
-    catatanResponsDprd: 'Komisi E merekomendasikan penambahan anggaran program gizi pada pembahasan APBD Perubahan.',
+    statusResponsPemda: 'ada', statusResponsDprd: 'sebagian',
     timeline: [
       { tanggal: '2026-08-04', judul: 'Cegah Stunting Sejak Dini, Mahasiswi KKN Undip Latih Kader Posyandu Desa Kedungpilang Olah Daun Kelor Jadi Puding Bergizi', deskripsi: 'Mahasiswa KKN Undip berfoto bersama kader Posyandu Desa Kedungpilang usai pelatihan pembuatan puding daun kelor. INDOZONE.ID - Tim II KKN...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-07', judul: 'Operasi Katarak Massal Bantu Kurangi Risiko Kebutaan di Banyumas', deskripsi: '07 Agt 2026 20:40 WIB Pusat Pemberitaan Poin Utama Operasi katarak massal merupakan upaya penting untuk membantu masyarakat kurang mampu...', tipe: 'pemberitaan' },
@@ -96,8 +93,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-nakertrans'], urusanId: 'urusan-tenagakerja',
     komisiIds: ['komisi-b'], anggotaIds: ['anggota-08'],
     dampak: ['Pendapatan buruh', 'Stabilitas sosial', 'Ekonomi daerah'],
-    statusResponsPemda: 'sebagian', statusResponsDprd: 'ada',
-    catatanResponsDprd: 'Komisi B mendesak Disnakertrans membuka posko pengaduan dan pelatihan alih keterampilan.',
+    statusResponsPemda: 'ada', statusResponsDprd: 'sebagian',
     timeline: [
       { tanggal: '2026-08-04', judul: 'PHK di Jawa Tengah Tembus 6.604 Pekerja, Mayoritas dari Sektor Tekstil dan Garmen', deskripsi: 'Industri tekstil dan garmen masih menjadi penyumbang terbesar kasus pemutusan hubungan kerja (PHK) di Jawa Tengah sepanjang 2026. Data...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-05', judul: 'Alarm Keras Industri Garmen Jateng: 1.400 Pekerja Terdampak PHK, DPRD Dorong Sistem Deteksi Dini', deskripsi: 'Penutupan PT Victory Apparel Indonesia di Semarang dan PT Samwon Busana Indonesia di Jepara yang berujung pada pemutusan hubungan kerja...', tipe: 'pemberitaan' },
@@ -137,7 +133,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-koperasi'], urusanId: 'urusan-ekonomi',
     komisiIds: ['komisi-b'], anggotaIds: ['anggota-02', 'anggota-29'],
     dampak: ['Pendapatan pelaku usaha', 'Ekonomi lokal'],
-    statusResponsPemda: 'ada', statusResponsDprd: 'ada',
+    statusResponsPemda: 'ada', statusResponsDprd: 'sebagian',
     timeline: [
       { tanggal: '2026-08-04', judul: 'BMK 1957 Gelar Mubes V di Semarang, Sisipkan Acara Budaya dan Libatkan UMKM', deskripsi: 'JawaPos.com - Barisan Muda Kosgoro 1957 (BMK 1957) akan menggelar Musyawarah Besar (Mubes) V pada 8-10 Agustus 2026. Agenda rutin ini akan...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-06', judul: 'Jawa Tengah Perkuat Halal Value Chain Lewat FAJAR 2026, UMKM Raup Omzet Lebih Tinggi', deskripsi: 'Festival Jawa Tengah Syariah (Fajar) 2026 kembali menjadi etalase pengembangan ekosistem halal di Jawa Tengah. Tak sekadar menghadirkan...', tipe: 'pemberitaan' },
@@ -177,7 +173,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-lingkungan'], urusanId: 'urusan-lingkungan',
     komisiIds: ['komisi-a', 'komisi-d'], anggotaIds: ['anggota-01', 'anggota-09', 'anggota-27'],
     dampak: ['Kesehatan lingkungan', 'Estetika kota'],
-    statusResponsPemda: 'sebagian', statusResponsDprd: 'belum',
+    statusResponsPemda: 'ada', statusResponsDprd: 'belum',
     timeline: [
       { tanggal: '2026-08-04', judul: 'Banyumas dan Ipoh Jajaki Kerja Sama Pengelolaan Sampah Bernilai Ekonom', deskripsi: 'Pemerintah Kabupaten Banyumas, Jawa Tengah, mulai menjajaki kerja sama dengan Kota Ipoh, Malaysia, dalam pengelolaan sampah. Kolaborasi...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-05', judul: 'Kebakaran Landa TPA Malabar di Cilacap, Alat Berat Dikerahkan', deskripsi: 'Ket. Kepala Pusat Data, Informasi, dan Komunikasi Kebencanaan BNPB Abdul Muhari di Jakarta, Rabu (5/8). A Badan Nasional Penanggulangan...', tipe: 'pemberitaan' },
@@ -218,8 +214,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-sosial'], urusanId: 'urusan-sosial',
     komisiIds: ['komisi-e'], anggotaIds: ['anggota-07', 'anggota-95'],
     dampak: ['Keadilan sosial', 'Kepercayaan publik'],
-    statusResponsPemda: 'sebagian', statusResponsDprd: 'ada',
-    catatanResponsDprd: 'Komisi E meminta pemutakhiran data terpadu kesejahteraan sosial dipercepat.',
+    statusResponsPemda: 'ada', statusResponsDprd: 'belum',
     timeline: [
       { tanggal: '2026-08-06', judul: 'PDI Perjuangan Kota Tegal Rutin Bagikan 5 Kg Beras untuk Warga Tidak Mampu, Komitmen "Mbelani Wong Cilik"', deskripsi: 'DPC PDI Perjuangan Kota Tegal kembali menggelar kegiatan rutin pembagian bansos beras 5 kilogram untuk warga kurang mampu. Penyaluran kali...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-07', judul: 'Kasus Dugaan Korupsi Bantuan PKH di Kalikajar, Kejari Wonosobo Periksa 20 Saksi - SuaraBaru.id', deskripsi: 'WONOSOBO (SUARA BARU.ID)-Kejaksaan Negeri (Kejari) Wonosobo mengungkap adanya dugaan penguasaan Kartu Keluarga Sejahtera (KKS), kartu ATM...', tipe: 'pemberitaan' },
@@ -239,7 +234,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-perhubungan'], urusanId: 'urusan-perhubungan',
     komisiIds: ['komisi-d'], anggotaIds: ['anggota-92'],
     dampak: ['Mobilitas warga', 'Konektivitas antarwilayah'],
-    statusResponsPemda: 'ada', statusResponsDprd: 'ada',
+    statusResponsPemda: 'ada', statusResponsDprd: 'belum',
     timeline: [
       { tanggal: '2026-08-04', judul: 'Perkuat Akses ke Industri, Trans Jateng Dipastikan Beroperasi di Batang pada 2028', deskripsi: 'Pemerintah Kabupaten Batang memastikan layanan angkutan massal Trans Jawa Tengah, akan mulai beroperasi di wilayah Kabupaten Batang pada...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-06', judul: 'Subsidi Pusat Dihentikan, Pemkab Banyumas Cari Jalan agar Trans Banyumas Tetap Beroperasi', deskripsi: 'Pemerintah Kabupaten (Pemkab) Banyumas menyiapkan sejumlah skenario agar layanan Bus Rapid Transit (BRT) Trans Banyumas tetap beroperasi...', tipe: 'pemberitaan' },
@@ -278,7 +273,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-pu', 'opd-bpbd'], urusanId: 'urusan-infrastruktur',
     komisiIds: ['komisi-d'], anggotaIds: ['anggota-93'],
     dampak: ['Kebutuhan dasar warga', 'Kesehatan masyarakat'],
-    statusResponsPemda: 'ada', statusResponsDprd: 'belum',
+    statusResponsPemda: 'ada', statusResponsDprd: 'sebagian',
     timeline: [
       { tanggal: '2026-08-04', judul: 'BMKG Rilis Peringatan Kekeringan Awas Dasarian I Agustus 2026, Kaltim Masuk Kategori Waspada', deskripsi: 'Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) resmi menerbitkan peringatan dini kekeringan meteorologis untuk periode Dasarian I...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-06', judul: 'Polres Pekalongan Salurkan 13.000 Liter Air Bersih untuk Warga Terdampak Kekeringan di Sragi', deskripsi: 'Polres Pekalongan - Polda Jawa Tengah - Polres Pekalongan menyalurkan bantuan air bersih sebanyak 13.000 liter kepada warga yang terdampak...', tipe: 'pemberitaan' },
@@ -298,7 +293,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-perindustrian'], urusanId: 'urusan-ekonomi',
     komisiIds: ['komisi-b', 'komisi-c'], anggotaIds: ['anggota-03', 'anggota-06', 'anggota-30', 'anggota-31'],
     dampak: ['Lapangan kerja', 'Pendapatan asli daerah'],
-    statusResponsPemda: 'ada', statusResponsDprd: 'ada',
+    statusResponsPemda: 'ada', statusResponsDprd: 'sebagian',
     timeline: [
       { tanggal: '2026-08-04', judul: 'Investor Australia Bangun Pabrik Baterai Rp 5,7 Triliun di KEK Batang, 1.000 Lapangan Kerja Tersedia', deskripsi: 'Jawa Tengahpress.com, Semarang - Jawa Tengah kembali menarik investasi strategis berskala global. Gubernur Jawa Tengah Ahmad Luthfi...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-07', judul: 'Otorita IKN Gandeng Jawa Tengah, Bahas Peluang Investasi dan Kolaborasi Pembangunan Nusantara', deskripsi: 'Otorita Ibu Kota Nusantara (IKN) menerima kunjungan Gubernur Jawa Tengah Ahmad Luthfi beserta jajaran Bupati dan Wakil Bupati se-Jawa...', tipe: 'pemberitaan' },
@@ -318,8 +313,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-sosial'], urusanId: 'urusan-sosial',
     komisiIds: ['komisi-e'], anggotaIds: ['anggota-07', 'anggota-95'],
     dampak: ['Keselamatan anak dan perempuan', 'Layanan perlindungan sosial'],
-    statusResponsPemda: 'sebagian', statusResponsDprd: 'ada',
-    catatanResponsDprd: 'Wakil Ketua DPRD mendorong penambahan unit layanan psikososial di setiap kabupaten.',
+    statusResponsPemda: 'ada', statusResponsDprd: 'belum',
     timeline: [
       { tanggal: '2026-08-05', judul: 'Update Kasus Dugaan Pelecehan di SMAN 1 Kedungwuni Pekalongan, 2 Oknum Guru Resmi Dijatuhi Sanksi', deskripsi: 'Kasus dugaan pelecehan seksual yang menyeret nama dua oknum guru SMAN 1 Kedungwuni, Pekalongan memasuki babak baru. Keduanya dialihkan...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-07', judul: 'Dua Guru Terduga Pelaku Kekerasan Seksual di Pekalongan Tak Diberhentikan, Hanya Dipindah', deskripsi: 'Dua oknum guru SMAN 1 Kedungwuni, Kabupaten Pekalongan, Jawa Tengah, yang diduga melakukan kekerasan seksual terhadap sejumlah siswi tidak...', tipe: 'pemberitaan' },
@@ -358,7 +352,7 @@ export const isuWilayahList: IsuWilayah[] = [
     opdIds: ['opd-nakertrans'], urusanId: 'urusan-tenagakerja',
     komisiIds: ['komisi-b'], anggotaIds: ['anggota-28'],
     dampak: ['Keselamatan pekerja migran', 'Reputasi daerah pengirim'],
-    statusResponsPemda: 'sebagian', statusResponsDprd: 'belum',
+    statusResponsPemda: 'belum', statusResponsDprd: 'belum',
     timeline: [
       { tanggal: '2026-08-05', judul: 'Pengawasan Ketat Imigrasi Pemalang Lindungi ABK dari Jerat TPPO , 45 Permohonan Paspor Diduga PMI Nonprosedural Ditolak', deskripsi: 'Kantor Imigrasi Kelas I Non TPI Pemalang, Jawa Tengah, terus memperkuat upaya pencegahan dini Tindak Pidana Perdagangan Orang (TPPO) dan...', tipe: 'pemberitaan' },
       { tanggal: '2026-08-08', judul: 'Kementerian P2MI Fasilitasi Pemulangan dan Rehabilitasi PMI Asal Brebes hingga Tiba di Kampung Halaman - LINGKAR', deskripsi: 'Kementerian Pelindungan Pekerja Migran Indonesia (KP2MI) melalui Direktorat Kepulangan dan Rehabilitasi memfasilitasi proses pemulangan dan...', tipe: 'pemberitaan' },

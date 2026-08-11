@@ -73,9 +73,9 @@ export const executiveAttentionList: ExecutiveAttentionItem[] = [
   },
   {
     id: 'ea-07-04', anggotaId: 'anggota-07', tier: 'high_attention',
-    issue: 'Tren kasus kekerasan terhadap anak dan perempuan terus meningkat',
-    evidence: 'Volume pemberitaan isu ini naik 13% dengan sentimen 64% negatif secara keseluruhan di tingkat wilayah.',
-    trend: 'Peningkatan bertahap namun konsisten selama sebulan terakhir.',
+    issue: 'Kasus kekerasan terhadap anak dan perempuan tetap bersentimen negatif meski volume mereda',
+    evidence: 'Volume pemberitaan isu ini menurun dibanding awal periode, namun sentimen tetap dominan negatif (73%) di tingkat wilayah.',
+    trend: 'Volume mereda, tetapi sentimen negatif yang tersisa mengindikasikan isu belum benar-benar selesai di mata publik.',
     relevance: 'Isu dominan yang melekat pada positioning personal Wakil Ketua DPRD.',
     recommendedAttention: 'Pertimbangkan mendorong evaluasi kebijakan layanan perlindungan secara kelembagaan, bukan hanya melalui konten publik.',
     isuId: 'isu-kekerasan-anak',
@@ -85,8 +85,8 @@ export const executiveAttentionList: ExecutiveAttentionItem[] = [
   {
     id: 'ea-08-01', anggotaId: 'anggota-08', tier: 'high_attention',
     issue: 'Sentimen negatif tertinggi di antara pimpinan DPRD terkait isu PHK industri tekstil',
-    evidence: 'Sentimen negatif personal mencapai 19%, dipicu eskalasi isu PHK yang melibatkan lebih dari 1.800 buruh terdampak.',
-    trend: 'Sentimen negatif meningkat seiring aksi unjuk rasa buruh dalam sebulan terakhir.',
+    evidence: 'Sentimen negatif personal mencapai 19%, seiring pemberitaan real yang mencatat 6.604 pekerja terkena PHK di Jawa Tengah hingga Juli 2026, mayoritas dari sektor tekstil dan garmen.',
+    trend: 'Volume pemberitaan menurun dari puncaknya, namun sentimen negatif (50% dari pemberitaan real) masih dominan.',
     relevance: 'Isu ini adalah Top Personal Issue utama dan berkaitan langsung dengan positioning sebagai pembela buruh.',
     recommendedAttention: 'Pastikan hasil audiensi dengan buruh dan Disnakertrans ditindaklanjuti secara nyata untuk menjaga kredibilitas positioning.',
     isuId: 'isu-phk-tekstil',
@@ -110,11 +110,11 @@ export const executiveAttentionList: ExecutiveAttentionItem[] = [
   },
   {
     id: 'ea-08-04', anggotaId: 'anggota-08', tier: 'watch',
-    issue: 'Isu kelangkaan pupuk bersubsidi mulai melekat sebagai personal issue tambahan',
-    evidence: 'Sentimen negatif 72% pada isu ini dengan tren naik 38%, berpotensi menambah beban reputasi jika tidak direspons.',
-    trend: 'Isu baru muncul dan meningkat cepat dalam 2 minggu terakhir.',
+    issue: 'Kelangkaan pupuk bersubsidi minim liputan pada periode ini, namun tetap perlu dipantau musiman',
+    evidence: 'Hanya sedikit pemberitaan real yang cocok dengan topik ini pada periode terpantau; isu ini historisnya berulang setiap awal musim tanam.',
+    trend: 'Belum ada indikasi eskalasi pada periode ini, namun pola musiman sebelumnya menunjukkan isu dapat muncul kembali tanpa peringatan dini.',
     relevance: 'Berkaitan dengan ruang lingkup Komisi B yang menjadi basis keanggotaan sebelumnya.',
-    recommendedAttention: 'Pertimbangkan mengambil sikap publik lebih awal sebelum isu ini menjadi sorotan lebih luas.',
+    recommendedAttention: 'Pertimbangkan meminta update distribusi pupuk secara berkala agar tidak bereaksi setelah isu kembali viral.',
     isuId: 'isu-pupuk-langka',
   },
 
@@ -122,7 +122,7 @@ export const executiveAttentionList: ExecutiveAttentionItem[] = [
   {
     id: 'ea-09-01', anggotaId: 'anggota-09', tier: 'high_attention',
     issue: 'Isu tambang galian C ilegal meningkat tajam dan berisiko menyeret nama pimpinan',
-    evidence: 'Volume pemberitaan naik 55% dalam 2 minggu, isu ini merupakan Top Personal Issue utama Wakil Ketua DPRD.',
+    evidence: 'Baru 4 pemberitaan real ditemukan, namun seluruhnya bersentimen negatif dan tren naik tajam — isu ini merupakan Top Personal Issue utama Wakil Ketua DPRD.',
     trend: 'Tren meningkat cepat, tertinggi di antara seluruh isu yang dipantau sistem.',
     relevance: 'Erat kaitannya dengan ruang lingkup pengawasan lingkungan dan tata kelola perizinan.',
     recommendedAttention: 'Ambil sikap publik dan dorong sidak resmi sebelum isu membesar ke media nasional.',
@@ -157,11 +157,11 @@ export const executiveAttentionList: ExecutiveAttentionItem[] = [
   // Setya Arinugroho, A.Md. — Wakil Ketua IV (anggota-25)
   {
     id: 'ea-25-01', anggotaId: 'anggota-25', tier: 'watch',
-    issue: 'Kemacetan Jalur Pantura berulang setiap musim liburan tanpa solusi struktural',
-    evidence: 'Volume pemberitaan naik 9% saat libur panjang, dipicu penyempitan jalur akibat proyek drainase yang belum tuntas.',
-    trend: 'Pola musiman berulang tanpa perbaikan signifikan pada infrastruktur pendukung.',
+    issue: 'Kemacetan Jalur Pantura relatif tenang pada periode ini, tetap perlu diwaspadai musiman',
+    evidence: 'Pemberitaan real pada periode ini minim (3 artikel) dan tidak menunjukkan eskalasi kemacetan besar, meski isu ini historisnya berulang setiap musim liburan.',
+    trend: 'Volume menurun dibanding pola musiman sebelumnya; belum ada indikasi lonjakan signifikan pada periode ini.',
     relevance: 'Merupakan salah satu Top Personal Issue Wakil Ketua IV.',
-    recommendedAttention: 'Dorong evaluasi menyeluruh proyek jalan yang berulang kali memicu kemacetan musiman.',
+    recommendedAttention: 'Tetap pantau menjelang musim liburan berikutnya, meski belum ada urgensi mendesak saat ini.',
     isuId: 'isu-macet-pantura',
   },
   {

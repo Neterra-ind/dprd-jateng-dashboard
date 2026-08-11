@@ -1,9 +1,15 @@
 import type { OversightGapEntry } from './types';
 import { isuWilayahList } from './isuWilayah';
 
+// Exposure thresholds are relative to the current dataset's own volume range rather than
+// fixed absolute counts, so the classification stays meaningful whether the underlying
+// numbers come from illustrative demo data or the smaller-scale real news dataset.
+const maxVolume = Math.max(...isuWilayahList.map((i) => i.volume));
+
 function eksposLevel(volume: number): 'low' | 'medium' | 'high' {
-  if (volume >= 600) return 'high';
-  if (volume >= 250) return 'medium';
+  const ratio = maxVolume > 0 ? volume / maxVolume : 0;
+  if (ratio >= 0.5) return 'high';
+  if (ratio >= 0.2) return 'medium';
   return 'low';
 }
 
