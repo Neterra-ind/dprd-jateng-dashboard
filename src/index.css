@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --color-canvas: #f3f7f8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef6f7;
+  --color-ink: #0c2126;
+  --color-ink-soft: #4d6469;
+  --color-ink-faint: #85999e;
+  --color-border: #dbe9ec;
+  --color-border-strong: #c3d8dc;
+
+  /* Taly Navy family — dark structural surfaces (sidebar, headers, gradients) */
+  --color-navy-950: #033744;
+  --color-navy-900: #06424f;
+  --color-navy-800: #0b515f;
+  --color-navy-700: #14606d;
+  --color-navy-600: #26717d;
+
+  /* Main brand color: Taly Navy — primary interactive/actionable color */
+  --color-brand: #033744;
+  --color-brand-dark: #021f26;
+  --color-brand-light: #0e5b6c;
+  --color-brand-soft: #dff2f5;
+
+  /* Secondary brand color: Reddish Orange — accents, highlights, calls to attention */
+  --color-accent: #ff4900;
+  --color-accent-dark: #cc3a00;
+  --color-accent-soft: #ffe8dc;
+
+  /* Powder & Beige — supporting neutrals for soft panels and gentle contrast */
+  --color-powder: #b0dfe6;
+  --color-powder-soft: #e3f5f8;
+  --color-blush: #e6b7b0;
+  --color-blush-soft: #f7e7e4;
+
+  --color-positive: #1a8754;
+  --color-positive-soft: #e5f5ee;
+  --color-negative: #c22f3d;
+  --color-negative-soft: #fbeaec;
+  --color-neutral: #8a6d1f;
+  --color-neutral-soft: #f7f1e1;
+
+  --color-risk-low: #4b8c5e;
+  --color-risk-medium: #c99a2e;
+  --color-risk-high: #d16a2c;
+  --color-risk-critical: #b3273e;
+}
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
