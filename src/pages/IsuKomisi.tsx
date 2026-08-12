@@ -10,7 +10,7 @@ import { beritaList } from '../data/berita';
 import { oversightGapByIsuId } from '../data/oversightGap';
 import { filterBerita, filterIsu } from '../lib/filters';
 import { sentimentDistribution, topMediaByVolume } from '../lib/aggregations';
-import { SentimentBadge, TrendTag, UrgencyBadge } from '../components/Badges';
+import { SentimentBadge, TrendTag } from '../components/Badges';
 import SentimentDonut from '../components/charts/SentimentDonut';
 import RankedBarList from '../components/RankedBarList';
 
@@ -157,7 +157,6 @@ export default function IsuKomisi() {
                       <p className="text-[12.5px] font-medium text-ink">{i.nama}</p>
                       <p className="text-[11px] text-ink-faint">{oversightGapByIsuId(i.id)?.catatan}</p>
                     </div>
-                    <UrgencyBadge urgency={i.urgency} />
                   </button>
                 ))}
               </div>

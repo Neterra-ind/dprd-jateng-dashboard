@@ -9,7 +9,7 @@ import { opdById } from '../data/opd';
 import { komisiById } from '../data/komisi';
 import { anggotaById } from '../data/anggota';
 import { filterIsu } from '../lib/filters';
-import { SentimentBadge, StatusBadge, TrendTag, UrgencyBadge } from '../components/Badges';
+import { SentimentBadge, StatusBadge, TrendTag } from '../components/Badges';
 import OPDProfileDrawer from '../components/OPDProfileDrawer';
 import { useState } from 'react';
 
@@ -60,7 +60,6 @@ export default function IsuWilayah() {
                       <p className="font-semibold text-ink">{isu.nama}</p>
                       <div className="mt-1 flex items-center gap-1.5">
                         <span className="text-[11px] text-ink-faint">{isu.kategori}</span>
-                        <UrgencyBadge urgency={isu.urgency} />
                       </div>
                     </td>
                     <td className="px-3 py-2.5 font-medium text-ink">{isu.volume.toLocaleString('id-ID')}</td>

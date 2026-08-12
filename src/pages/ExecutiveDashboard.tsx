@@ -20,7 +20,7 @@ import TrendLineChart from '../components/charts/TrendLineChart';
 import SentimentDonut from '../components/charts/SentimentDonut';
 import RankedBarList from '../components/RankedBarList';
 import StrategicAttentionPanel from '../components/StrategicAttentionPanel';
-import { UrgencyBadge, TrendTag } from '../components/Badges';
+import { TrendTag } from '../components/Badges';
 
 export default function ExecutiveDashboard() {
   const { filters } = useFilters();
@@ -118,9 +118,6 @@ export default function ExecutiveDashboard() {
                   <TrendTag value={isu.trend} />
                 </div>
                 <p className="mt-1 line-clamp-2 text-[12px] text-ink-soft">{isu.ringkasan}</p>
-                <div className="mt-2">
-                  <UrgencyBadge urgency={isu.urgency} />
-                </div>
               </button>
             ))}
           </div>
