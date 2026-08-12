@@ -39,10 +39,6 @@ const urgencyLabel: Record<Urgency, string> = {
   critical: 'Kritis',
 };
 
-export function UrgencyBadge({ urgency }: { urgency: Urgency }) {
-  return <Tag className={urgencyStyle[urgency]}>Urgensi {urgencyLabel[urgency]}</Tag>;
-}
-
 export function RiskLevelBadge({ level }: { level: RiskLevel }) {
   return <Tag className={urgencyStyle[level]}>{urgencyLabel[level].toUpperCase()}</Tag>;
 }

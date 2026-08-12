@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Drawer from './Drawer';
 import { EmptyState } from './ui';
-import { StatusBadge, TrendTag, UrgencyBadge } from './Badges';
+import { StatusBadge, TrendTag } from './Badges';
 import { opdById } from '../data/opd';
 import { urusanById } from '../data/urusan';
 import { isuWilayahList } from '../data/isuWilayah';
@@ -53,7 +53,6 @@ export default function OPDProfileDrawer({ opdId, onClose }: { opdId: string | n
                     <div className="min-w-0">
                       <p className="truncate text-[12.5px] font-medium text-ink">{i.nama}</p>
                       <div className="mt-1 flex items-center gap-1.5">
-                        <UrgencyBadge urgency={i.urgency} />
                         <StatusBadge status={i.statusResponsPemda} />
                       </div>
                     </div>
